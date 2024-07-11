@@ -238,18 +238,17 @@ background: radial-gradient(circle, rgba(64,71,107,1) 0%, rgba(99,183,86,1) 100%
     text-decoration: none;
 }
 .format {
-    width: 50%;
-    height: 50vh;
-    position: absolute;
+ position: absolute;
     left: 600px;
     top: 3770px;
 background-color: whitesmoke;
 padding: 20px 20px;
 border-radius: 10px;
+display: flex;
 }
 .mesazhi {
     background-color:whitesmoke;
-    width: 610px;
+    width: 481px;
     position: absolute;
     left: 1px;
     padding: 5px 20px;
@@ -273,7 +272,6 @@ border-radius: 10px;
 .footer h3 {
     font-size: 20px;
 }
-
 @media only screen and (max-width: 600px) {
 
     .fotot img {
@@ -308,6 +306,25 @@ border-radius: 10px;
     .sherbimettona p {
         padding: 5px 5px;
     }
+    .format {
+        position: absolute;
+        left: 20px;
+        width: 250px;
+        top: 5900px;
+        margin-bottom: 3000px;
+        height: 300px;
+    }
+    .contact {
+        height: 940px;
+    }
+    .mesazhi {
+        width: 250px;
+    }
+    body {
+        margin: 0px;
+        width: 100%;
+    }
+}
     
 
 
