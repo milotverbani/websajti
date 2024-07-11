@@ -203,7 +203,7 @@ background: radial-gradient(circle, rgba(64,71,107,1) 0%, rgba(99,183,86,1) 100%
 .fotot img {
     
     border-radius: 9px;
-    background-color: rgb(207, 192, 192);
+    background-color: rgba(252, 252, 252, 0.959);
     
 }
 .rgba3 {
@@ -273,6 +273,43 @@ border-radius: 10px;
 .footer h3 {
     font-size: 20px;
 }
+
+@media only screen and (max-width: 600px) {
+
+    .fotot img {
+        width: 90px;
+    }
+    .About img {
+        width: 190px;
+        height: 120px;
+    }
+    .About {
+        display: block;
+    }
+    .About1 img {
+        width: 190px;
+        height: 120px;
+    }
+    .About1 {
+        display: block;
+    }
+    .cardss {
+        display: block;
+        padding-bottom: 10px;
+    }
+    .sherbimettona {
+    height: 1350px;
+    }
+    .cardss .card {
+        margin-bottom: 20px;
+         align-items: center;
+         margin-left: 45px;
+    }
+    .sherbimettona p {
+        padding: 5px 5px;
+    }
+    
+
 
 
   
