@@ -159,7 +159,9 @@ background: radial-gradient(circle, rgba(64,71,107,1) 0%, rgba(99,183,86,1) 100%
 .portfolioo {
     text-align: center;
     padding-top: 20px;
-    background-color: whitesmoke;
+    background-color:rgb(231, 222, 222);
+    background-image: url(portfoliobc.png);
+    background-size: cover;
 }
 .c2 {
     display: flex;
@@ -219,6 +221,9 @@ background: radial-gradient(circle, rgba(64,71,107,1) 0%, rgba(99,183,86,1) 100%
     text-align: center;
     text-decoration: underline green;
     padding-top: 20px;
+    background-image: url(contactbc.png);
+    background-size: cover; 
+    
 }
 .contact table {
     
