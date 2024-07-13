@@ -49,13 +49,12 @@ section{
     background-size: cover;
     margin: 0px;
     padding: 0px;
-    
-    
 }
 .outer{
     width: 100%;
     height: 600px;
     background: rgba(0,0,0,0.5);
+   
     
 }
 @keyframes animate {
@@ -96,40 +95,53 @@ section{
 .logoo img {
     border-radius: 12px;
 }
-.About {
-    margin: 40px 80px;
+.row {
+    width: 500px;
+    height: 200px;
+    margin-top: -50px;
+    margin-left: 250px;
+    margin-bottom: 60px;
     display: flex;
 	flex-direction: row;
 	flex-wrap: nowrap;
-	justify-content: space-between;
-	align-items: center;
-	align-content: stretch;
-}
-.About span {
-    font-size: 13px;
-}
-.About img {
-    width: 660px;
-    height: 250px;
-    
-}
-.About1 img {
-    width: 850px;
-    height: 250px;
-}
-
-.About1{
-    margin: 40px 80px;
-    display: flex;
-	flex-direction: row;
-	flex-wrap: nowrap;
-	justify-content: space-between;
+	justify-content: space-around;
 	align-items: center;
 	align-content: stretch;
     
 }
-.About1 span {
-    font-size: 13px;
+.row .card {
+   padding: 20px 5px 20px 5px;
+    background-color: #FFFFFF;
+    border-style: solid;
+    border-width: 0px 0px 0px 0px;
+    border-radius: 0px 0px 0px 0px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.14);
+    padding-left: 40px;
+    position: relative;
+    z-index: 1;
+}
+.vija {
+    width: 100%;
+    height: 10px;
+    background-color: #228B22;
+}
+.teksti {
+    text-align: center;
+}
+.imazhet1 {
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	align-items: center;
+	align-content: stretch;
+}
+.imazhet1 img , iframe {
+    border-radius: 20px;
+  
+}
+.teksti h3 {
+    margin-top: 20px;
 }
 .sherbimettona {
     width: 100%;
