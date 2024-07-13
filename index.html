@@ -40,7 +40,7 @@
       <div class="Home" id="Home">
         <div class="outer">
           <div class="details">
-            <section class="hiddenn">
+            <section class="hiddenn0">
             <h1>Learti <span>Park</span></h1>
             <h3>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt asperiores sint consectetur, corporis distinctio facere!</h3>
             <p type="button" class="btn btn-success"> <i class="fa-solid fa-phone"></i> +(383)49-123-123</p>
@@ -55,14 +55,17 @@
       <section class="hiddenn">
       <div class="About" id="Rreth-Nesh">
         <img src="logolp.jpg" class="img-thumbnail" alt="..." width="320px" height="300px">
+        <div class="message">
         <h2>Qe nga viti  <br>
           Dizajn i peisazhit <br>
-          <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit.Praesentium, nulla voluptatibus. 
-            Quasi quaerat atque adipisci error, tempora vitae eos tenetur.</span></h2>
+        </h2>
+          <p><span>Lorem ipsum dolor sit, amet consectetur adipisicing elit.Praesentium, nulla voluptatibus. 
+            Quasi quaerat atque adipisci error, tempora vitae eos tenetur.</span></p>
+        </div>
       </div>
     </section>
-    
-    <section class="hiddenn">
+    <div class="koninier">
+    <section class="hiddenn1">
       <div class="About1">
       <h2>Me një histori të gjatë dhe një angazhim  
         të vazhdueshëm për cilësi dhe inovacion <br> <span>Lorem ipsum, dolor 
@@ -70,6 +73,7 @@
           <img src="logo3.jpg" class="img-thumbnail" alt="..." width="350px">
       </div>
     </section>
+</div>
       <div class="sherbimettona" id="Sherbimet">
         <div class="sherbimetbcg">
           <section class="hiddenn">
@@ -109,7 +113,7 @@
      </div>
      </div>
      <div class="portfolioo" id="portfolio">
-      <section class="hiddenn">
+      <section class="hiddenn1">
       <h1>PORTFOLIO</h1>
       <div class="c2">
         <div class="card" style="width: 33rem;">
@@ -188,9 +192,14 @@
     </div>
   </div>
 </div>
-<div class="contact">
-  <section class="hiddenn">
-  <h1>KONTAKT</h1>
+
+<div class="Kontaktimi" style="padding: 20px;">
+<h1 style="text-align: center;">Ways To Contact</h1>
+<section class="hiddenn1"></section>
+<div class="contact"> 
+    <div class="kontaktet">
+  <section class="hiddenn1">
+  
   <table  style="height: 90px;">
     <tbody>
       <tr>
@@ -228,39 +237,40 @@
          </tr>
     </tbody>
   </table>
+
 </section>
-  <div class="format" id="kontakt">
-    <div class="mb-3">
-    <div class="row">
-      <div class="col">
-        <input type="text" class="form-control" placeholder="First name" aria-label="First name">
-      </div>
-      <div class="col">
-        <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
-      </div>
-    </div>
-    <form>
-      <div class="mb-3">
-        <label for="exampleInputEmail1" class="form-label">Phone</label>
-        <input type="phone" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="049-123-123">
-          <div class="mb-3">
-            <label for="exampleInputEmail1" class="form-label">Email address</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-            <div class="mb-3 mesazhi">
-              <label for="exampleFormControlTextarea1" class="form-label">Message</label>
-              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-              <div class="buttoni"><button type="submit" class="btn btn-primary">Submit</button> </div>
-</form>
-
-
+</div>
+<div class="koninier">
+  <section class="hiddenn">
+    <div class="container">
+        <form action="send_email.php" method="post" class="contact-form">
+            <h2>Contact Us</h2>
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
             </div>
-          </div>
-      </div>
-  </div>
-  
-  </div>
-   </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+            </div>
+            <button type="submit">Send</button>
+        </form>
+    </div>
+  </section>
+</div>
+</div>
+</div>
+</div>
+</div>
+
    <secntion class="hiddenn">
    <div class="mapi">
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23632.99726072258!2d21.233432601291813!3d42.23314973271029!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13547a9e71226915%3A0x5c7d4224c8cdc228!2sKacanik!5e0!3m2!1sen!2s!4v1720535349953!5m2!1sen!2s" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
