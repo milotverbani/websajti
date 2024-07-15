@@ -13,7 +13,12 @@ body {
 }
 .navbar-nav{
     gap: 40px;
+
 }
+.navbar {
+    color: #0056b3;
+}
+
 section{
     overflow: hidden;
 }
@@ -99,7 +104,7 @@ section{
     width: 560px;
     height: 200px;
     margin-top: 20px;
-    margin-left: 250px;
+    margin-left: 180px;
     margin-bottom: 60px;
     display: flex;
 	flex-direction: row;
@@ -418,12 +423,16 @@ button {
 button:hover {
     background-color: #0056b3;
 }
-img {
-    transition: all 2s;
+.card {
+    overflow: hidden;
 }
-img:hover {
-    transform: scale(1.05);
+ .card img {
+    transition: 2s ease;
 }
+ .card:hover img {
+    transform: scale(1.2);
+}
+
  
   @media(prefers-reducted-motion) {
       .hidden {
