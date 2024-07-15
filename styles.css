@@ -418,6 +418,12 @@ button {
 button:hover {
     background-color: #0056b3;
 }
+img {
+    transition: all 2s;
+}
+img:hover {
+    transform: scale(1.05);
+}
  
   @media(prefers-reducted-motion) {
       .hidden {
