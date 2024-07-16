@@ -16,3 +16,16 @@ const observer = new IntersectionObserver((entries) => {
 
 const hiddenElements = document.querySelectorAll('.hiddenn, .hiddenn1, .hiddenn0');
 hiddenElements.forEach((el) => observer.observe(el));
+
+let lastScrollTop = 0;
+const navbar = document.querySelector(".navbar");
+
+window.addEventListener("scroll", function() {
+    let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    if (scrollTop > lastScrollTop) {
+        navbar.style.top = "-80px";
+    } else {
+        navbar.style.top = "1.5%";  
+    }
+    lastScrollTop = scrollTop;
+});
