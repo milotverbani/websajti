@@ -231,9 +231,10 @@ section{
     overflow: hidden;
     text-align: center;
     padding-top: 20px;
-    background-color:rgb(231, 222, 222);
+    background-color:rgb(192, 222, 192);
     background-image: url(portfoliobc.png);
     background-size: cover;
+    
 }
 .portfolioo .card-img-top {
     width: 600px;
