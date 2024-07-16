@@ -74,16 +74,16 @@ section{
 }
 @keyframes animate {
     0%,100%{
-        background-image: url(homelogo.jpg);
+        background-image: url(./images/homelogo.jpg);
     }
     25% {
-        background-image: url(homelogo1.jpg);
+        background-image: url(./images/homelogo1.jpg);
     }
     50% {
-        background-image: url(sherbimetlogo.jpg);
+        background-image: url(./images/sherbimetlogo.jpg);
     }
     75% {
-        background-image: url(homelogo3.jpg);
+        background-image: url(./images/sherbimetlogo.jpg);
     }
 }
 .details {
@@ -155,7 +155,7 @@ width: 300px;
 .sherbimettona {
     width: 100%;
     height: 640px;
-    background-image: url(sherbimetlogo.jpg);
+    background-image: url(./images/sherbimetlogo.jpg);
     background-size: cover;
     margin: 0px;
     padding: 0px;
@@ -224,7 +224,7 @@ width: 300px;
     text-align: center;
     padding-top: 20px;
     background-color:rgb(192, 222, 192);
-    background-image: url(portfoliobc.png);
+    background-image: url(./images/portfoliobc.png);
     background-size: cover;
     
 }
@@ -253,7 +253,7 @@ width: 300px;
 .container4 {
     text-align: center;
     
-    background-image: url(bcgkotakt1.jpg);
+    background-image: url(./images/bcgkotakt1.jpg);
     background-size: cover;
     color: white;
   
@@ -279,7 +279,7 @@ width: 300px;
     text-align: center;
     text-decoration: underline green;
     padding-top: 20px;
-    background-image: url(contactbc.png);
+    background-image: url(./images/contactbc.png);
     background-size: cover; 
     
 }
