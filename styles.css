@@ -539,6 +539,12 @@ button:hover {
     height: 350px;
     overflow: hidden;
   }
+  .product-image img {
+    transition: 2s ease;
+}
+ .product-image:hover img {
+    transform: scale(1.2);
+}
   
   .product-thumb {
     width: 100%;
@@ -679,6 +685,7 @@ button:hover {
     grid-column: span 2;
     margin-bottom: 10px;
   }
+  
   
 
   

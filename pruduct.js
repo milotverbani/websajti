@@ -27,7 +27,7 @@ var products = [
     {
         image: "./images/portfolioimg5.jpg",
         brand: "Learti Park",
-        description: "Precizion ne shkallen me te lart te prerjes"
+        description: "Precizion në shkallën më të lart të prerjes"
     },
     {
         image: "./images/portfolioimg6.jpg",
