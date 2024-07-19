@@ -47,3 +47,52 @@ productContainers.forEach((item, i) => {
         item.scrollLeft -= containerWidth;
     })
 })
+let autoScrollInterval;
+const scrollInterval = 5000; // 3 seconds for auto-scrolling
+
+function startAutoScroll(item, containerWidth) {
+    autoScrollInterval = setInterval(() => {
+        item.scrollLeft += containerWidth;
+        // Check if we've reached the end and reset to the beginning
+        if (item.scrollLeft >= item.scrollWidth - containerWidth) {
+            item.scrollLeft = 0;
+        }
+    }, scrollInterval);
+}
+
+function stopAutoScroll() {
+    clearInterval(autoScrollInterval);
+}
+
+// Initialize the scroll functionality for each container
+productContainers.forEach((item, i) => {
+    let containerDimensions = item.getBoundingClientRect();
+    let containerWidth = containerDimensions.width;
+
+    // Start auto-scrolling
+    startAutoScroll(item, containerWidth);
+
+    // Handle next button click
+    nxtBtn[i].addEventListener('click', () => {
+        stopAutoScroll();
+        item.scrollLeft += containerWidth;
+        // Restart auto-scrolling after manual navigation
+        startAutoScroll(item, containerWidth);
+    });
+
+    // Handle previous button click
+    preBtn[i].addEventListener('click', () => {
+        stopAutoScroll();
+        item.scrollLeft -= containerWidth;
+        // Restart auto-scrolling after manual navigation
+        startAutoScroll(item, containerWidth);
+    });
+     let isScrolling;
+
+    item.addEventListener('scroll', () => {
+        stopAutoScroll();
+        // Restart auto-scrolling after a delay
+        clearTimeout(isScrolling);
+        isScrolling = setTimeout(() => startAutoScroll(item, containerWidth), scrollInterval * 2); // Restart after 6 seconds of inactivity
+    });
+});
