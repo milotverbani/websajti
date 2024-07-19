@@ -1,58 +1,58 @@
 var products = [
     {
-        image: "./images/portfolio1.jpg",
+        image: "./images/portfolioimg.jpg",
         brand: "Learti Park",
-        description: "descriptionasdfghj"
+        description: "Siperfaqe Oborresh"
     },
     {
-        image: "./images/portfolio1.jpg",
+        image: "./images/portfolioimg1.jpg",
         brand: "Learti Park",
-        description: "descriptionasdfghj"
+        description: "Siperfaqe Oborresh"
     },
     {
-        image: "./images/portfolio1.jpg",
+        image: "./images/portfolioimg2.jpg",
         brand: "Learti Park",
-        description: "descriptionasdfghj"
+        description: "Arendim Hortikulturore"
     },
     {
-        image: "./images/portfolio1.jpg",
+        image: "./images/portfolioimg3.jpg",
         brand: "Learti Park",
-        description: "descriptionasdfghj"
+        description: "Siperfaqe Oborresh"
     },
     {
-        image: "./images/portfolio1.jpg",
+        image: "./images/portfolioimg4.jpg",
         brand: "Learti Park",
-        description: "descriptionasdfghj"
+        description: "Precizion ne shkallen me te lart te prerjes"
     },
     {
-        image: "./images/portfolio1.jpg",
+        image: "./images/portfolioimg5.jpg",
         brand: "Learti Park",
-        description: "descriptionasdfghj"
+        description: "Precizion ne shkallen me te lart te prerjes"
     },
     {
-        image: "./images/portfolio1.jpg",
+        image: "./images/portfolioimg6.jpg",
         brand: "Learti Park",
-        description: "descriptionasdfghj"
+        description: "Arendim i Parqeve"
     },
     {
-        image: "./images/portfolio1.jpg",
+        image: "./images/portfolioimg7.jpg",
         brand: "Learti Park",
-        description: "descriptionasdfghj"
+        description: "Siperfaqe Oborresh"
     },
     {
-        image: "./images/portfolio1.jpg",
+        image: "./images/portfolioimg8.jpg",
         brand: "Learti Park",
-        description: "descriptionasdfghj"
+        description: "Arendim i Parqeve"
     },
     {
-        image: "./images/portfolio1.jpg",
+        image: "./images/portfolio2.jpg",
         brand: "Learti Park",
-        description: "descriptionasdfghj"
+        description: "Arendim i Parqeve"
     }, 
     {
-        image: "./images/portfolio1.jpg",
+        image: "./images/oborret.jpg",
         brand: "Learti Park",
-        description: "descriptionasdfghj"
+        description: "Siperfaqe Oborresh"
     }, 
     {
         image: "./images/portfolio1.jpg",
