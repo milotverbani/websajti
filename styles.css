@@ -249,7 +249,7 @@ height: 200px;
     align-items: center;
 }
 .contact .koninier{
-    
+    width: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
