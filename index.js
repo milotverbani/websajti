@@ -53,7 +53,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     productContainers.forEach((container, i) => {
-        const cardWidth = container.querySelector('.product-card').getBoundingClientRect().width ;
+        const cardWidth = container.querySelector('.product-card').getBoundingClientRect().width;
         console.log(`Card width for container ${i}: ${cardWidth}`);
 
         nxtBtn[i].addEventListener('click', () => {
@@ -77,6 +77,17 @@ document.addEventListener("DOMContentLoaded", () => {
             isScrolling = setTimeout(() => startAutoScroll(container, cardWidth, i), scrollInterval * 4);
         });
 
-        startAutoScroll(container, cardWidth, i);
+        // Observer to start/stop auto-scroll based on intersection
+        const containerObserver = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    startAutoScroll(container, cardWidth, i);
+                } else {
+                    stopAutoScroll(i);
+                }
+            });
+        });
+
+        containerObserver.observe(container);
     });
 });
