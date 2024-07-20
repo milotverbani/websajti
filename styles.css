@@ -704,7 +704,6 @@ button:hover {
         width: 100%;
         margin: 0;
         padding: 0;
-    
     }
      
     
@@ -724,8 +723,11 @@ button:hover {
         margin-bottom: 5%;
     }
     .rrethnesh .teksti {
-       width: 90%;
+       width: 100%;
        font-size: smaller;
+    }
+    video {
+        margin-left: 26px;
     }
     .teksti2 {
         margin: 0;
@@ -786,6 +788,7 @@ button:hover {
  .contact {
    display: block; 
 }
+
 
 }
     
