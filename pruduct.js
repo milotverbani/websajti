@@ -138,3 +138,24 @@ function showModal(product) {
 document.addEventListener('DOMContentLoaded', function() {
     populateDom(products);
 });
+var span = document.getElementsByClassName("close")[0];
+            span.onclick = function() {
+                closeModal(modal);
+            };
+
+            window.onclick = function(event) {
+                if (event.target == modal) {
+                    closeModal(modal);
+                }
+            };
+            function closeModal(modal) {
+                modal.classList.add("fade-out");
+                modal.classList.add('blur(5px)')
+                modal.style.animation = "fadeOut 0.5s";
+                setTimeout(() => {
+                    modal.style.display = "none";
+                    modal.classList.remove("fade-out");
+                    modal.classList.remove("blur(5px)");
+                }, 500);
+            }
+        

@@ -1,98 +1,82 @@
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach((entry) => {
-    if (entry.isIntersecting) {
-      // Check if the entry target has one of the specified classes
-      if (entry.target.classList.contains('hiddenn') || entry.target.classList.contains('hiddenn1')) {
-        entry.target.classList.add('show');
-      } else {
-        entry.target.classList.add('show0');
-      }
-    } else {
-      // Remove classes when not intersecting
-      entry.target.classList.remove('show', 'show0');
-    }
-  });
-});
+document.addEventListener("DOMContentLoaded", () => {
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                if (entry.target.classList.contains('hiddenn') || entry.target.classList.contains('hiddenn1')) {
+                    entry.target.classList.add('show');
+                } else {
+                    entry.target.classList.add('show0');
+                }
+            } else {
+                entry.target.classList.remove('show', 'show0');
+            }
+        });
+    });
 
-const hiddenElements = document.querySelectorAll('.hiddenn, .hiddenn1, .hiddenn0');
-hiddenElements.forEach((el) => observer.observe(el));
+    const hiddenElements = document.querySelectorAll('.hiddenn, .hiddenn1, .hiddenn0');
+    hiddenElements.forEach((el) => observer.observe(el));
 
-let lastScrollTop = 0;
-const navbar = document.querySelector(".navbar");
+    let lastScrollTop = 0;
+    const navbar = document.querySelector(".navbar");
 
-window.addEventListener("scroll", function() {
-    let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-    if (scrollTop > lastScrollTop) {
-        navbar.style.top = "-80px";
-    } else {
-        navbar.style.top = "1.5%";  
-    }
-    lastScrollTop = scrollTop;
-});
-
-
-const productContainers = [...document.querySelectorAll('.product-container')];
-const nxtBtn = [...document.querySelectorAll('.nxt-btn')];
-const preBtn = [...document.querySelectorAll('.pre-btn')];
-
-productContainers.forEach((item, i) => {
-    let containerDimensions = item.getBoundingClientRect();
-    let containerWidth = containerDimensions.width;
-
-    nxtBtn[i].addEventListener('click', () => {
-        item.scrollLeft += containerWidth;
-    })
-
-    preBtn[i].addEventListener('click', () => {
-        item.scrollLeft -= containerWidth;
-    })
-})
-let autoScrollInterval;
-const scrollInterval = 5000; // 3 seconds for auto-scrolling
-
-function startAutoScroll(item, containerWidth) {
-    autoScrollInterval = setInterval(() => {
-        item.scrollLeft += containerWidth;
-        // Check if we've reached the end and reset to the beginning
-        if (item.scrollLeft >= item.scrollWidth - containerWidth) {
-            item.scrollLeft = 0;
+    window.addEventListener("scroll", function() {
+        let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        if (scrollTop > lastScrollTop) {
+            navbar.style.top = "-80px";
+        } else {
+            navbar.style.top = "1.5%";
         }
-    }, scrollInterval);
-}
-
-function stopAutoScroll() {
-    clearInterval(autoScrollInterval);
-}
-
-// Initialize the scroll functionality for each container
-productContainers.forEach((item, i) => {
-    let containerDimensions = item.getBoundingClientRect();
-    let containerWidth = containerDimensions.width;
-
-    // Start auto-scrolling
-    startAutoScroll(item, containerWidth);
-
-    // Handle next button click
-    nxtBtn[i].addEventListener('click', () => {
-        stopAutoScroll();
-        item.scrollLeft += containerWidth;
-        // Restart auto-scrolling after manual navigation
-        startAutoScroll(item, containerWidth);
+        lastScrollTop = scrollTop;
     });
 
-    // Handle previous button click
-    preBtn[i].addEventListener('click', () => {
-        stopAutoScroll();
-        item.scrollLeft -= containerWidth;
-        // Restart auto-scrolling after manual navigation
-        startAutoScroll(item, containerWidth);
-    });
-     let isScrolling;
+    const productContainers = [...document.querySelectorAll('.product-container')];
+    const nxtBtn = [...document.querySelectorAll('.nxt-btn')];
+    const preBtn = [...document.querySelectorAll('.pre-btn')];
 
-    item.addEventListener('scroll', () => {
-        stopAutoScroll();
-        // Restart auto-scrolling after a delay
-        clearTimeout(isScrolling);
-        isScrolling = setTimeout(() => startAutoScroll(item, containerWidth), scrollInterval * 2); // Restart after 6 seconds of inactivity
+    let autoScrollIntervals = [];
+    const scrollInterval = 2000;
+
+    function startAutoScroll(container, cardWidth, index) {
+        console.log(`Starting auto-scroll for container ${index}`);
+        autoScrollIntervals[index] = setInterval(() => {
+            container.scrollLeft += cardWidth;
+
+            if (container.scrollLeft >= container.scrollWidth - container.clientWidth) {
+                container.scrollLeft = 0;
+            }
+        }, scrollInterval);
+    }
+
+    function stopAutoScroll(index) {
+        console.log(`Stopping auto-scroll for container ${index}`);
+        clearInterval(autoScrollIntervals[index]);
+    }
+
+    productContainers.forEach((container, i) => {
+        const cardWidth = container.querySelector('.product-card').getBoundingClientRect().width ;
+        console.log(`Card width for container ${i}: ${cardWidth}`);
+
+        nxtBtn[i].addEventListener('click', () => {
+            console.log(`Next button clicked for container ${i}`);
+            stopAutoScroll(i);
+            container.scrollLeft += cardWidth;
+            startAutoScroll(container, cardWidth, i);
+        });
+
+        preBtn[i].addEventListener('click', () => {
+            console.log(`Previous button clicked for container ${i}`);
+            stopAutoScroll(i);
+            container.scrollLeft -= cardWidth;
+            startAutoScroll(container, cardWidth, i);
+        });
+
+        let isScrolling;
+        container.addEventListener('scroll', () => {
+            stopAutoScroll(i);
+            clearTimeout(isScrolling);
+            isScrolling = setTimeout(() => startAutoScroll(container, cardWidth, i), scrollInterval * 4);
+        });
+
+        startAutoScroll(container, cardWidth, i);
     });
 });
