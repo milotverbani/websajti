@@ -706,6 +706,8 @@ button:hover {
         padding: 0;
     
     }
+     
+    
     .RrethNContainer{
         width: 100%;
     }
@@ -770,21 +772,21 @@ button:hover {
     .sherbimettona p {
         padding: 5px 5px;
     }
-    .format {
-        position: absolute;
-        left: 20px;
-        width: 250px;
-        top: 5900px;
-        margin-bottom: 3000px;
-        height: 300px;
-    }
+   
     .contact {
         height: 940px;
     }
     .mesazhi {
         width: 250px;
     }
-  
+  .container4 {
+    width: 100%;
+    font-size: 11px;
+  }
+ .contact {
+   display: block; 
+}
+
 }
     
 

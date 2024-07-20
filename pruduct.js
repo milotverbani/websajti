@@ -54,36 +54,7 @@ var products = [
         brand: "Learti Park",
         description: "Siperfaqe Oborresh"
     }, 
-    {
-        image: "./images/portfolio1.jpg",
-        brand: "Learti Park",
-        description: "descriptionasdfghj"
-    }, 
-    {
-        image: "./images/portfolio1.jpg",
-        brand: "Learti Park",
-        description: "descriptionasdfghj"
-    },
-    {
-        image: "./images/portfolio1.jpg",
-        brand: "Learti Park",
-        description: "descriptionasdfghj"
-    }
-    , {
-        image: "./images/portfolio1.jpg",
-        brand: "Learti Park",
-        description: "descriptionasdfghj"
-    },
-    {
-        image: "./images/portfolio1.jpg",
-        brand: "Learti Park",
-        description: "descriptionasdfghj"
-    },
-    {
-        image: "./images/portfolio1.jpg",
-        brand: "Learti Park",
-        description: "descriptionasdfghj"
-    }
+    
     
 ];
 
