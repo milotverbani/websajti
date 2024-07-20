@@ -125,10 +125,10 @@ width: 300px;
 height: 200px;
 }
 .col-md-4.mb-3.mb-md-0.d-flex.justify-content-center:nth-child(2) {
-    transition-delay: 200ms;
+    transition-delay: 300ms;
 }
 .col-md-4.mb-3.mb-md-0.d-flex.justify-content-center:nth-child(3) {
-    transition-delay: 400ms;
+    transition-delay: 600ms;
 }
 #Rreth-Nesh{
     display: flex;
@@ -229,7 +229,14 @@ height: 200px;
     padding: 10px 10px;
 }
 .navbar-nav a {
+    text-align: center;
+    width: 110px;
     color: #228B22;
+   border-radius: 30px;
+}
+.navbar-nav a:hover {
+    color: white;
+    background-color:#228B22
 }
 
 .container2 {
@@ -377,13 +384,13 @@ height: 200px;
 .hiddenn0{
     opacity: 0;
     filter: blur(10px);
-    transition: 1.5s ease-out ;
+    transition: 1.25s ease-out ;
 }
 .hiddenn {
     opacity: 0;
     filter: blur(10px);
     transform: translateX(-25%);
-    transition: 1.5s ease-out;
+    transition: 1.25s ease-out;
   }
   .imazhet1 {
     width: 75%;
@@ -396,7 +403,7 @@ height: 200px;
     opacity: 0;
     filter: blur(10px);
     transform: translateX(+25%);
-    transition: 1.5s ease-out;
+    transition: 1.25s ease-out;
     
   }
   .show0{
@@ -420,7 +427,9 @@ height: 200px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     width: 400px;
 }
-
+svg {
+    height: 5%;
+}
 .contact-form {
     display: flex;
     flex-direction: column;
@@ -705,34 +714,50 @@ button:hover {
         margin: 0;
         padding: 0;
     }
-     
+    .home {
+        width: 100%;
+    }
     
     .RrethNContainer{
         width: 100%;
     }
     .rrethnesh {
         display: block;
+        margin: 30px;
     }
     .rrethnesh .rrethneshvideo{
-        width: 100%;
+       width: 100%;
     }
     .rrethnesh .rrethneshvideo .videofb{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-bottom: 5%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .rrethnesh .rrethneshvideo video {
+        width: 100%;
     }
     .rrethnesh .teksti {
        width: 100%;
-       font-size: smaller;
+       font-size: small;
+       margin: 0;
+       padding: 0;
+       text-align: center;
+    }
+    .sherbimetbcg {
+        width: 100%;
+        padding: 0;
+        font-size: small;
+    }
+    .rrethnesh .teksti p {
+        text-align: center;
     }
     video {
         margin-left: 26px;
     }
     .teksti2 {
-        margin: 0;
+        
         text-align: center;
-        width: 100%;
+        width: 90%;
     }
     .social-media{
         display: none;
@@ -764,6 +789,7 @@ button:hover {
     }
     .sherbimettona {
     min-height: 100vh;
+    width: 100%;
     }
     .cardss .card {
         margin: 0 auto;
@@ -825,6 +851,7 @@ button:hover {
     animation: fadeIn 0.5s;
     text-align: center;
     height: 80%;
+    border-radius: 25px;
 }
 .modalinfo {
     display: flex;
@@ -883,3 +910,4 @@ button:hover {
     from {transform: translateY(0);}
     to {transform: translateY(-100px);}
 }
+
