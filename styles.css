@@ -143,10 +143,10 @@ height: 200px;
 .rrethnesh{
        display: flex;
        
-       margin-top: 50px;
+       margin: 50px;
 }
 .rrethnesh .teksti {
-    background-color: rgba(0, 0, 0, 0.1);
+   
     border-radius: 25px;
     text-align: center;
     width: 40%;
@@ -266,12 +266,13 @@ height: 200px;
     overflow: hidden;
     text-align: center;
     background-color:rgb(192, 222, 192);
-    background-image: url(./images/portfoliobc.png);
+    background-image: url(./images/portfoliobc.png  );
     background-size: cover;
     
 }
-.portfolioo h1{
-    margin-top: 95px;
+.portfolioo  h1{
+    margin: 95px auto;
+    
 }
 .portfolioo .card-img-top {
     width: 600px;
@@ -376,13 +377,13 @@ height: 200px;
 .hiddenn0{
     opacity: 0;
     filter: blur(10px);
-    transition: 1s ease-out ;
+    transition: 1.5s ease-out ;
 }
 .hiddenn {
     opacity: 0;
     filter: blur(10px);
-    transform: translateX(-50%);
-    transition: 1s ease-out;
+    transform: translateX(-25%);
+    transition: 1.5s ease-out;
   }
   .imazhet1 {
     width: 75%;
@@ -394,8 +395,8 @@ height: 200px;
 .hiddenn1{
     opacity: 0;
     filter: blur(10px);
-    transform: translateX(+50%);
-    transition: 1s ease-out;
+    transform: translateX(+25%);
+    transition: 1.5s ease-out;
     
   }
   .show0{
@@ -531,6 +532,7 @@ button:hover {
     height: 450px;
     margin-right: 40px;
     border: 1px solid #228B22;
+    border-radius: 7px;
   }
   
   .product-image {
@@ -538,6 +540,7 @@ button:hover {
     width: 100%;
     height: 350px;
     overflow: hidden;
+    border-radius: inherit;
   }
   .product-image img {
     transition: 2s ease;
