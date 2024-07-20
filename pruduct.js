@@ -113,12 +113,7 @@ var span = document.getElementsByClassName("close")[0];
             span.onclick = function() {
                 closeModal(modal);
             };
-
-            window.onclick = function(event) {
-                if (event.target == modal) {
-                    closeModal(modal);
-                }
-            };
+            
             function closeModal(modal) {
                 modal.classList.add("fade-out");
                 modal.classList.add('blur(5px)')
