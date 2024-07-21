@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const preBtn = [...document.querySelectorAll('.pre-btn')];
 
     let autoScrollIntervals = [];
-    const scrollInterval = 2000;
+    const scrollInterval = 4000;
 
     function startAutoScroll(container, cardWidth, index) {
         console.log(`Starting auto-scroll for container ${index}`);
@@ -74,7 +74,7 @@ document.addEventListener("DOMContentLoaded", () => {
         container.addEventListener('scroll', () => {
             stopAutoScroll(i);
             clearTimeout(isScrolling);
-            isScrolling = setTimeout(() => startAutoScroll(container, cardWidth, i), scrollInterval * 4);
+            isScrolling = setTimeout(() => startAutoScroll(container, cardWidth, i), scrollInterval * 2);
         });
 
         // Observer to start/stop auto-scroll based on intersection

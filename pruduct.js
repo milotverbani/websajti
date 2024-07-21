@@ -63,7 +63,7 @@ function populateDom(products) {
     products.forEach((product, index) => {
         output += "<div class='product-card'>" +
                     "<div class='product-image'>" + 
-                        "<img class='product-thumb' src=" + product.image + ">" +
+                        "<img class='product-thumb' src=" + product.image + " alt='Product Photo'>" +
                         "<button class='card-btn' data-index=" + index + ">See more</button>" +
                     "</div>" + 
                     "<div class='product-info'>" + 
@@ -113,7 +113,7 @@ var span = document.getElementsByClassName("close")[0];
             span.onclick = function() {
                 closeModal(modal);
             };
-            
+
             function closeModal(modal) {
                 modal.classList.add("fade-out");
                 modal.classList.add('blur(5px)')
