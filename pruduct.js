@@ -67,7 +67,7 @@ function populateDom(products) {
                         "<button class='card-btn' data-index=" + index + ">See more</button>" +
                     "</div>" + 
                     "<div class='product-info'>" + 
-                        "<img class='productlogo' src=" + product.brand + " alt='productlogo'>" +
+                        "<img class='modalBrand' src=" + product.brand + " alt='productlogo'>" +
                     "</div>" +  
                 "</div>";
     });
@@ -89,7 +89,7 @@ function showModal(product) {
     var modalDescription = document.getElementById("modalDescription");
 
     modalImage.src = product.image;
-    modalBrand.textContent = product.brand;
+    modalBrand.src = product.brand;
     modalDescription.textContent = product.description;
 
     modal.style.display = "block";
