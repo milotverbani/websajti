@@ -68,13 +68,8 @@ section{
     margin: 0px;
     padding: 0px;
 }
-.outer{
-    width: 100%;
-    min-height: 100vh;
-    background: rgba(0,0,0,0.5);
-   
-    
-}
+
+/*
 @keyframes animate {
     0%,100%{
         background-image: url(./images/homelogo.jpg);
@@ -89,6 +84,7 @@ section{
         background-image: url(./images/sherbimetlogo.jpg);
     }
 }
+    */
 .details h2 {
     font-family: "Sevillana", cursive;
     font-weight: 400;
@@ -98,7 +94,7 @@ section{
     text-align: center;
     color: whitesmoke;
     padding: 220px 30px;
-    min-height: 100vh;
+    height: 100vh;
     display: block;
     align-items: center;
     justify-content: center;
@@ -108,6 +104,21 @@ section{
     color:#00b377;
 }
 .details i {
+   
+}
+.videoja {
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    top: 0;
+    background: rgba(0,0,0,0.5);
+   
+}
+.videoja video {
+    width: 100%;
+    opacity: 0.8;
+    
    
 }
 .double {
@@ -184,6 +195,12 @@ height: 200px;
     height: 10px;
     background-color: #228B22;
 }
+.btn-group {
+    gap: 1%;
+    width: 600px;
+    padding-bottom: 10px;
+}
+
 
 .teksti2{
     width: 50%;
@@ -822,6 +839,22 @@ button:hover {
     }
     .home {
         width: 100%;
+    }
+    .videoja {
+        position: absolute;
+        left: 0;
+        right: 0;
+        z-index: -1;
+        top: 0;
+        background: rgba(0,0,0,0.5);
+       
+    }
+    .videoja video {
+        width: 1500px;
+        opacity: 0.8;  
+    }
+    .btn-group {
+    
     }
     
     .RrethNContainer{

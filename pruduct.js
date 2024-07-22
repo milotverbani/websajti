@@ -1,46 +1,46 @@
 var products = [
     {
-        image: "./images/portfolioimg.jpg",
-        brand: "./images/logo1nobcg.png",
-        description: "Siperfaqe Oborresh"
-    },
-    {
-        image: "./images/portfolioimg1.jpg",
+        image: "./images/portfolioimg3.jpg",
         brand: "./images/logo1nobcg.png",
         description: "Siperfaqe Oborresh"
     },
     {
         image: "./images/portfolioimg2.jpg",
         brand: "./images/logo1nobcg.png",
-        description: "Arendim Hortikulturore"
+        description: "Siperfaqe Oborresh"
     },
     {
         image: "./images/portfolioimg3.jpg",
         brand: "./images/logo1nobcg.png",
-        description: "Siperfaqe Oborresh"
-    },
-    {
-        image: "./images/portfolioimg4.jpg",
-        brand: "./images/logo1nobcg.png",
-        description: "Precizion ne shkallen me te lart te prerjes"
-    },
-    {
-        image: "./images/portfolioimg5.jpg",
-        brand: "./images/logo1nobcg.png",
-        description: "Precizion në shkallën më të lart të prerjes"
+        description: "Arendim Hortikulturore"
     },
     {
         image: "./images/portfolioimg6.jpg",
         brand: "./images/logo1nobcg.png",
-        description: "Arendim i Parqeve"
+        description: "Siperfaqe Oborresh"
     },
     {
         image: "./images/portfolioimg7.jpg",
         brand: "./images/logo1nobcg.png",
-        description: "Siperfaqe Oborresh"
+        description: "Precizion ne shkallen me te lart te prerjes"
     },
     {
         image: "./images/portfolioimg8.jpg",
+        brand: "./images/logo1nobcg.png",
+        description: "Precizion në shkallën më të lart të prerjes"
+    },
+    {
+        image: "./images/oborret.jpg",
+        brand: "./images/logo1nobcg.png",
+        description: "Arendim i Parqeve"
+    },
+    {
+        image: "./images/portfolioimg.jpg",
+        brand: "./images/logo1nobcg.png",
+        description: "Siperfaqe Oborresh"
+    },
+    {
+        image: "./images/homelogo3.jpg",
         brand: "./images/logo1nobcg.png",
         description: "Arendim i Parqeve"
     },
@@ -50,7 +50,7 @@ var products = [
         description: "Arendim i Parqeve"
     }, 
     {
-        image: "./images/oborret.jpg",
+        image: "./images/portfolioimg1.jpg",
         brand: "./images/logo1nobcg.png",
         description: "Siperfaqe Oborresh"
     }, 
