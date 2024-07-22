@@ -99,7 +99,7 @@ section{
     color: whitesmoke;
     padding: 220px 30px;
     min-height: 100vh;
-    display: flex;
+    display: block;
     align-items: center;
     justify-content: center;
 
@@ -111,8 +111,10 @@ section{
    
 }
 .double {
-    display: table-caption;
-   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .social-media1 i {
     margin-right: 10px;
