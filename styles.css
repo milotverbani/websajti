@@ -110,6 +110,10 @@ section{
 .details i {
    
 }
+.double {
+    display: table-caption;
+   
+}
 .social-media1 i {
     margin-right: 10px;
     font-size: 27px;
@@ -290,6 +294,9 @@ height: 200px;
 .portfolioo .card-img-top {
     width: 600px;
     height: 300px;
+}
+.productlogo{
+    width: 100%;
 }
 .card-body {
     color: rgb(20, 147, 105);
@@ -571,6 +578,11 @@ button:hover {
     height: 100%;
     object-fit: cover;
     border-bottom: thin #228B22;
+  }
+  .outer h1{
+    color: black;
+    font-weight: bold;
+    font-family: fantasy;
   }
   
   .discount-tag {

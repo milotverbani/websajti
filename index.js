@@ -77,7 +77,6 @@ document.addEventListener("DOMContentLoaded", () => {
             isScrolling = setTimeout(() => startAutoScroll(container, cardWidth, i), scrollInterval * 2);
         });
 
-        // Observer to start/stop auto-scroll based on intersection
         const containerObserver = new IntersectionObserver((entries) => {
             entries.forEach((entry) => {
                 if (entry.isIntersecting) {

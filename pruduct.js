@@ -1,57 +1,57 @@
 var products = [
     {
         image: "./images/portfolioimg.jpg",
-        brand: "Learti Park",
+        brand: "./images/logo1nobcg.png",
         description: "Siperfaqe Oborresh"
     },
     {
         image: "./images/portfolioimg1.jpg",
-        brand: "Learti Park",
+        brand: "./images/logo1nobcg.png",
         description: "Siperfaqe Oborresh"
     },
     {
         image: "./images/portfolioimg2.jpg",
-        brand: "Learti Park",
+        brand: "./images/logo1nobcg.png",
         description: "Arendim Hortikulturore"
     },
     {
         image: "./images/portfolioimg3.jpg",
-        brand: "Learti Park",
+        brand: "./images/logo1nobcg.png",
         description: "Siperfaqe Oborresh"
     },
     {
         image: "./images/portfolioimg4.jpg",
-        brand: "Learti Park",
+        brand: "./images/logo1nobcg.png",
         description: "Precizion ne shkallen me te lart te prerjes"
     },
     {
         image: "./images/portfolioimg5.jpg",
-        brand: "Learti Park",
+        brand: "./images/logo1nobcg.png",
         description: "Precizion në shkallën më të lart të prerjes"
     },
     {
         image: "./images/portfolioimg6.jpg",
-        brand: "Learti Park",
+        brand: "./images/logo1nobcg.png",
         description: "Arendim i Parqeve"
     },
     {
         image: "./images/portfolioimg7.jpg",
-        brand: "Learti Park",
+        brand: "./images/logo1nobcg.png",
         description: "Siperfaqe Oborresh"
     },
     {
         image: "./images/portfolioimg8.jpg",
-        brand: "Learti Park",
+        brand: "./images/logo1nobcg.png",
         description: "Arendim i Parqeve"
     },
     {
         image: "./images/portfolio2.jpg",
-        brand: "Learti Park",
+        brand: "./images/logo1nobcg.png",
         description: "Arendim i Parqeve"
     }, 
     {
         image: "./images/oborret.jpg",
-        brand: "Learti Park",
+        brand: "./images/logo1nobcg.png",
         description: "Siperfaqe Oborresh"
     }, 
     
@@ -67,7 +67,7 @@ function populateDom(products) {
                         "<button class='card-btn' data-index=" + index + ">See more</button>" +
                     "</div>" + 
                     "<div class='product-info'>" + 
-                        "<h2 class='product-brand'>" + product.brand + "</h2>" +
+                        "<img class='productlogo' src=" + product.brand + " alt='productlogo'>" +
                     "</div>" +  
                 "</div>";
     });
