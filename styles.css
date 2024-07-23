@@ -748,6 +748,8 @@ button:hover {
     overflow: hidden;
     animation: fadeIn 0.5s;
     padding-top: 60px;
+    backdrop-filter: blur(10px);
+    
 }
 
 .modal-content {
@@ -802,6 +804,51 @@ button:hover {
 .modalBrand{
     width:100%;
 }
+
+.produktgrid  {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+    margin-bottom: 5%;
+}
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 200px);
+    gap: 10px;
+    width: 80%;
+    max-width: 1000px;
+
+}
+
+.grid-item {
+    background-color: #ccc;
+    position: relative;
+    overflow: hidden;
+    transition: transform 1s ease;
+    background-size: cover;
+    background-position: center;
+    border: solid #76F05B 2px;
+    border-radius: 15px;
+}
+
+.grid-item:hover {
+    z-index: 2;
+    transform: scale(1.5);
+}
+
+.item1 { background-image: url('./images/portfolioimg4.jpg'); }
+.item2 { background-image: url('./images/portfolioimg5.jpg'); }
+.item3 { background-image: url('./images/portfolioimg5.jpg'); }
+.item4 { background-image: url('./images/portfolioimg5.jpg'); }
+.item5 { background-image: url('./images/portfolioimg5.jpg'); }
+.item6 { background-image: url('./images/portfolioimg5.jpg'); }
+
 @keyframes fadeIn {
     from {opacity: 0;}
     to {opacity: 1;}
@@ -911,6 +958,7 @@ button:hover {
         width: 190px;
         height: 120px;
     }
+    
     .About {
         display: block;
     }
@@ -948,6 +996,11 @@ button:hover {
   .container4 {
     width: 100%;
     font-size: 11px;
+  }
+  .btn-group{
+    display: grid;
+    width: 100%;
+    place-content: center;
   }
  .contact {
    display: block;
@@ -987,11 +1040,15 @@ button:hover {
 .modaldiscription{
     width: 100%;
 }
-
+.rgba3{
+    height: fit-content;
 }
-
-
-
-    
-
+.grid-container{
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(6, 200px);
+}
+.grid-item:hover{
+    transform: scaleY(1.25);
+}
+}
 

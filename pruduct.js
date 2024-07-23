@@ -64,7 +64,7 @@ function populateDom(products) {
         output += "<div class='product-card'>" +
                     "<div class='product-image'>" + 
                         "<img class='product-thumb' src=" + product.image + " alt='Product Photo'>" +
-                        "<button class='card-btn' data-index=" + index + ">See more</button>" +
+                        "<button class='card-btn' data-index=" + index + ">Shiko më shumë</button>" +
                     "</div>" + 
                     "<div class='product-info'>" + 
                         "<img class='modalBrand' src=" + product.brand + " alt='productlogo'>" +

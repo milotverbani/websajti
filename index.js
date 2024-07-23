@@ -34,14 +34,16 @@ document.addEventListener("DOMContentLoaded", () => {
     const preBtn = [...document.querySelectorAll('.pre-btn')];
 
     let autoScrollIntervals = [];
-    const scrollInterval = 4000;
+    const scrollInterval = 2000;
 
     function startAutoScroll(container, cardWidth, index) {
         console.log(`Starting auto-scroll for container ${index}`);
         autoScrollIntervals[index] = setInterval(() => {
             container.scrollLeft += cardWidth;
 
-            if (container.scrollLeft >= container.scrollWidth - container.clientWidth) {
+            // Check if the slider has reached the end
+            if (container.scrollLeft + container.clientWidth >= container.scrollWidth) {
+                console.log(`Container ${index} reached the end. Resetting to start.`);
                 container.scrollLeft = 0;
             }
         }, scrollInterval);
@@ -60,6 +62,12 @@ document.addEventListener("DOMContentLoaded", () => {
             console.log(`Next button clicked for container ${i}`);
             stopAutoScroll(i);
             container.scrollLeft += cardWidth;
+
+            // Check if the slider has reached the end
+            if (container.scrollLeft + container.clientWidth > container.scrollWidth) {
+                console.log(`Container ${i} reached the end. Resetting to start.`);
+                container.scrollLeft = 0;
+            }
             startAutoScroll(container, cardWidth, i);
         });
 
@@ -74,7 +82,7 @@ document.addEventListener("DOMContentLoaded", () => {
         container.addEventListener('scroll', () => {
             stopAutoScroll(i);
             clearTimeout(isScrolling);
-            isScrolling = setTimeout(() => startAutoScroll(container, cardWidth, i), scrollInterval * 2);
+            isScrolling = setTimeout(() => startAutoScroll(container, cardWidth, i), scrollInterval * 3);
         });
 
         const containerObserver = new IntersectionObserver((entries) => {
