@@ -67,6 +67,7 @@ section{
     background-size: cover;
     margin: 0px;
     padding: 0px;
+    overflow: hidden;
 }
 
 /*
@@ -233,6 +234,7 @@ height: 200px;
     padding: 0px;
     text-align: center;
     color: whitesmoke;
+    overflow: hidden;
        
 }
 .sherbimetbcg {
@@ -1054,6 +1056,9 @@ button:hover {
 }
 .grid-item:hover{
     transform: scaleY(1.25);
+}
+.Home .sherbimettona {
+    overflow: hidden;
 }
 }
 
