@@ -54,20 +54,24 @@ section{
    
 }
 .social-media i:hover {
-    color: blue;
+    color:#228B22;
 }
 *body {
     margin: 0px;
     padding: 0px;
 }
-.Home {
-    width: 100%;
-    min-height: 100vh;
-    animation: animate 16s ease-in-out infinite;
-    background-size: cover;
-    margin: 0px;
-    padding: 0px;
-    overflow: hidden;
+.home {
+    width: 100%; 
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.home  h1{
+    color: #7ff55ef8;
+    font-weight: 600;
+    font-family: 'Sevillana',cursive;
+     text-align: center;
 }
 
 /*
@@ -100,6 +104,15 @@ section{
     align-items: center;
     justify-content: center;
 }
+.video-back{
+    position: absolute;
+    z-index: -1;
+    right: 0;
+    bottom: 0;  
+    width: 100%;
+    height: auto;
+    filter: contrast(1);  
+}
 .details span {
     color:#00b377;
 }
@@ -126,6 +139,7 @@ section{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    filter: brightness(1);
 }
 .social-media1 i {
     margin-right: 10px;
@@ -403,6 +417,9 @@ height: 200px;
     padding-bottom: 10px;
     padding: 20px 20px;
 }
+button:hover{
+    background-color: #79F956;
+}
 .mapi {
     margin-top: 50px;
 }
@@ -512,9 +529,7 @@ button {
     transition: background-color 0.3s ease;
 }
 
-button:hover {
-    background-color: #0056b3;
-}
+
 .card {
     overflow: hidden;
 }
@@ -527,9 +542,7 @@ button:hover {
 .social-media i {
     color: #76F05B;
 }
-.social-media i:hover {
-    color: rgb(11, 239, 114);
-}
+
 .social-media1 i {
     color: #ddeedd;
 }
@@ -823,8 +836,8 @@ button:hover {
 
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 200px);
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1, 200px);
     gap: 10px;
     width: 80%;
     max-width: 1000px;
@@ -847,12 +860,11 @@ button:hover {
     transform: scale(1.5);
 }
 
-.item1 { background-image: url('./images/portfolioimg4.jpg'); }
-.item2 { background-image: url('./images/portfolioimg5.jpg'); }
-.item3 { background-image: url('./images/portfolioimg5.jpg'); }
-.item4 { background-image: url('./images/portfolioimg5.jpg'); }
-.item5 { background-image: url('./images/portfolioimg5.jpg'); }
-.item6 { background-image: url('./images/portfolioimg5.jpg'); }
+.item1 { background-image: url('./images/detajet1.jpeg'); }
+.item2 { background-image: url('./images/detajet2.jpeg'); }
+.item3 { background-image: url('./images/detajet3.jpg'); }
+.item4 { background-image: url('./images/detajet4.jpg'); }
+
 
 @keyframes fadeIn {
     from {opacity: 0;}
@@ -876,7 +888,18 @@ button:hover {
 
 
 
-  
+  @media (min-aspect-ratio: 16/9) {
+    .video-back{
+        width: 100%;
+        height: auto;
+    }
+  }
+  @media (max-aspect-ratio: 16/9) {
+    .video-back{
+        width: auto;
+        height: 100%;
+    }
+  }
 
 
   @media(prefers-reducted-motion) {
@@ -890,24 +913,9 @@ button:hover {
         margin: 0;
         padding: 0;
         overflow-x:hidden;
-
     }
     .home {
         width: 100%;
-    }
-    .videoja {
-        position: absolute;
-        left: 0;
-        right: 0;
-        z-index: -1;
-        top: 0;
-        background: rgba(0,0,0,0.5);
-       
-    }
-    .videoja video {
-        width: 1500px;
-        opacity: 0.8; 
-         
     }
    
     
@@ -1057,8 +1065,6 @@ button:hover {
 .grid-item:hover{
     transform: scaleY(1.25);
 }
-.Home .sherbimettona {
-    overflow: hidden;
-}
+
 }
 

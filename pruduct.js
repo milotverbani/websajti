@@ -1,59 +1,95 @@
 var products = [
     {
-        image: "./images/portfolioimg3.jpg",
+        image: "./images/portfolio1.jpeg",
         brand: "./images/logo1nobcg.png",
         description: "Siperfaqe Oborresh"
-    },
-    {
-        image: "./images/portfolioimg2.jpg",
-        brand: "./images/logo1nobcg.png",
-        description: "Siperfaqe Oborresh"
-    },
-    {
-        image: "./images/portfolioimg3.jpg",
-        brand: "./images/logo1nobcg.png",
-        description: "Arendim Hortikulturore"
-    },
-    {
-        image: "./images/portfolioimg6.jpg",
-        brand: "./images/logo1nobcg.png",
-        description: "Siperfaqe Oborresh"
-    },
-    {
-        image: "./images/portfolioimg7.jpg",
-        brand: "./images/logo1nobcg.png",
-        description: "Precizion ne shkallen me te lart te prerjes"
-    },
-    {
-        image: "./images/portfolioimg8.jpg",
-        brand: "./images/logo1nobcg.png",
-        description: "Precizion në shkallën më të lart të prerjes"
-    },
-    {
-        image: "./images/oborret.jpg",
-        brand: "./images/logo1nobcg.png",
-        description: "Arendim i Parqeve"
-    },
-    {
-        image: "./images/portfolioimg.jpg",
-        brand: "./images/logo1nobcg.png",
-        description: "Siperfaqe Oborresh"
-    },
-    {
-        image: "./images/homelogo3.jpg",
-        brand: "./images/logo1nobcg.png",
-        description: "Arendim i Parqeve"
     },
     {
         image: "./images/portfolio2.jpg",
         brand: "./images/logo1nobcg.png",
+        description: "Siperfaqe Oborresh"
+    },
+    {
+        image: "./images/portfolio3.jpg",
+        brand: "./images/logo1nobcg.png",
+        description: "Arendim Hortikulturore"
+    },
+    {
+        image: "./images/portfolio4.jpg",
+        brand: "./images/logo1nobcg.png",
+        description: "Siperfaqe Oborresh"
+    },
+    {
+        image: "./images/portfolio5.jpeg",
+        brand: "./images/logo1nobcg.png",
+        description: "Precizion ne shkallen me te lart te prerjes"
+    },
+    {
+        image: "./images/portfolio6.jpeg",
+        brand: "./images/logo1nobcg.png",
+        description: "Precizion në shkallën më të lart të prerjes"
+    },
+    {
+        image: "./images/portfolio7.jpeg",
+        brand: "./images/logo1nobcg.png",
+        description: "Arendim i Parqeve"
+    },
+    {
+        image: "./images/portfolio8.jpeg",
+        brand: "./images/logo1nobcg.png",
+        description: "Siperfaqe Oborresh"
+    },
+    {
+        image: "./images/portfolio9.jpeg",
+        brand: "./images/logo1nobcg.png",
+        description: "Arendim i Parqeve"
+    },
+    {
+        image: "./images/portfolio10.jpeg",
+        brand: "./images/logo1nobcg.png",
         description: "Arendim i Parqeve"
     }, 
     {
-        image: "./images/portfolioimg1.jpg",
+        image: "./images/portfolio11.jpg",
         brand: "./images/logo1nobcg.png",
         description: "Siperfaqe Oborresh"
     }, 
+    {
+        image: "./images/portfolio12.jpeg",
+        brand: "./images/logo1nobcg.png",
+        description: "Siperfaqe Oborresh"
+    }, 
+    {
+        image: "./images/portfolio13.jpeg",
+        brand: "./images/logo1nobcg.png",
+        description: "Siperfaqe Oborresh"
+    }, 
+    {
+        image: "./images/portfolio14.jpeg",
+        brand: "./images/logo1nobcg.png",
+        description: "Siperfaqe Oborresh"
+    }, 
+    {
+        image: "./images/portfolio15.jpeg",
+        brand: "./images/logo1nobcg.png",
+        description: "Siperfaqe Oborresh"
+    }, 
+    {
+        image: "./images/portfolio16.jpeg",
+        brand: "./images/logo1nobcg.png",
+        description: "Siperfaqe Oborresh"
+    }, 
+    {
+        image: "./images/portfolio17.jpeg",
+        brand: "./images/logo1nobcg.png",
+        description: "Siperfaqe Oborresh"
+    }, 
+    {
+        image: "./images/portfolio18.jpg",
+        brand: "./images/logo1nobcg.png",
+        description: "Siperfaqe Oborresh"
+    } 
+    
     
     
 ];
