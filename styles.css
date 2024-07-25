@@ -324,7 +324,7 @@ height: 200px;
     overflow: hidden;
     text-align: center;
     
-    background-image: url(./images/contactbc.png);
+    background-image: url(./images/portfoliobacground.jpeg);
     background-size: cover;
     color:black;
     
@@ -388,7 +388,7 @@ height: 200px;
     display: flex;
     text-align: center;
     padding-top: 20px;
-    background-image: url(./images/contactbc.png);
+    background-image: url(./images/kontaktbcg.jpeg);
     background-size: cover; 
     
 }
