@@ -311,13 +311,14 @@ emailjs.sendForm('contact_service', 'contact_form', this);
     <!-- To simplify the tutorial, the value is static. -->
      <h1>Contact Us</h1>
     <input type="hidden" name="contact_number" value="697483" >
-    <label>Name</label>
-    <input type="text" name="user_name" placeholder="Your Nmae">
+    <label>Emri</label>
+    <input type="text" name="user_name" placeholder="Emri juaj">
     <label>Email</label>
-    <input type="email" name="user_email" placeholder="Your Email">
-    <label>Message</label>
-    <textarea name="message" placeholder="Message"></textarea>
-    <input type="submit" value="Send">
+    <input type="email" name="user_email" placeholder="Emaili juaj">
+    <label>Mesazhi</label>
+    <textarea name="message" placeholder="Mesazhi"></textarea>
+    <div id="liveAlertPlaceholder"></div>
+    <button type="button" class="btn" id="liveAlertBtn"><input type="submit" value="Dergo"></button>
   </form>
   </div>
 </div>
