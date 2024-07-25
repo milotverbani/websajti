@@ -167,6 +167,7 @@ height: 200px;
 .col-md-4.mb-3.mb-md-0.d-flex.justify-content-center:nth-child(3) {
     transition-delay: 600ms;
 }
+
 #Rreth-Nesh{
     display: flex;
     justify-content: center;
@@ -179,8 +180,10 @@ height: 200px;
 }
 .rrethnesh{
        display: flex;
-       
+       color: white;
+       border-radius: 10px;
        margin: 50px;
+       background-image: url(./images/blackbc.jpg);
 }
 .rrethnesh .teksti {
    
@@ -320,11 +323,13 @@ height: 200px;
     min-height: 100vh;
     overflow: hidden;
     text-align: center;
-    background-color:rgb(192, 222, 192);
-    background-image: url(./images/portfoliobc.png  );
+    
+    background-image: url(./images/contactbc.png);
     background-size: cover;
+    color:black;
     
 }
+
 .portfolioo  h1{
     margin: 95px auto;
     
