@@ -46,7 +46,7 @@
          </div>
     </div>
       </nav>
-      <video autoplay muted loop class="video-back">
+      <video playsinline autoplay muted loop class="video-back">
         <source src="./images/WhatsApp Video 2024-07-23 at 00.12.38.mp4" type="video/mp4">
       </video>
       <div class="home" id="home">
@@ -309,13 +309,14 @@ emailjs.sendForm('contact_service', 'contact_form', this);
 <div class="kontakti">
   <form id="contact-form">
     <!-- To simplify the tutorial, the value is static. -->
+     <h1>Contact Us</h1>
     <input type="hidden" name="contact_number" value="697483" >
     <label>Name</label>
-    <input type="text" name="user_name" placeholder="mos qo emaila se gmail tamin vijn">
+    <input type="text" name="user_name" placeholder="Your Nmae">
     <label>Email</label>
-    <input type="email" name="user_email">
+    <input type="email" name="user_email" placeholder="Your Email">
     <label>Message</label>
-    <textarea name="message"></textarea>
+    <textarea name="message" placeholder="Message"></textarea>
     <input type="submit" value="Send">
   </form>
   </div>
