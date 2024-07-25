@@ -269,13 +269,56 @@
          </tr>
     </tbody>
   </table>
-  <form>
-  
+  <script type="text/javascript">
+    (function() {
+        // https://dashboard.emailjs.com/admin/account
+        emailjs.init({
+          publicKey: "DBS4tuiKKboWu9rBE",
+        });
+    })();
+</script>
+<script type="text/javascript">
+    window.onload = function() {
+        document.getElementById('contact-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            // these IDs from the previous steps
+            emailjs.sendForm('service_380f3qi', 'template_s64m6os', this)
+                .then(() => {
+                    console.log('SUCCESS!');
+                }, (error) => {
+                    console.log('FAILED...', error);
+                });
+        });
+    }
+</script>
+
+<script
+  type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script>
+  emailjs.init({
+  publicKey: 'DBS4tuiKKboWu9rBE',
+});
+emailjs.sendForm('contact_service', 'contact_form', this);
+</script>
 </section>
 
 
 </div>
-
+<div class="kontakti">
+  <form id="contact-form">
+    <!-- To simplify the tutorial, the value is static. -->
+    <input type="hidden" name="contact_number" value="697483" >
+    <label>Name</label>
+    <input type="text" name="user_name" placeholder="mos qo emaila se gmail tamin vijn">
+    <label>Email</label>
+    <input type="email" name="user_email">
+    <label>Message</label>
+    <textarea name="message"></textarea>
+    <input type="submit" value="Send">
+  </form>
+  </div>
 </div>
 </div>
 
