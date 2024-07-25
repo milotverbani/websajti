@@ -1097,7 +1097,7 @@ button {
     margin: 0 auto;
     padding: 20px;
     border: 2px solid #ddd;
-    border-radius: 10px;
+    border-radius:  10px 40px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     background-color: #f9f9f9;
   }
