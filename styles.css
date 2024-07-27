@@ -7,6 +7,7 @@ body {
     font-style: normal;
     overflow-x: hidden;
     width: 100%;
+    background-color: #1d1d1d;
 }
 .About .message{
    text-align: center;
@@ -26,9 +27,9 @@ body {
     opacity: 0.92;
     z-index: 1;
     color: #76F05B;
-    transition: top 0.3s ease;
+    transition: top 0.3s ease;  
+    background-color: #1d1d1d !important;
 }
-
 
 section{
     overflow: hidden;
@@ -144,18 +145,21 @@ section{
     font-size: 27px;
     cursor: pointer;
     transform: 3s;
+    
 }
-.social-media1 i:hover {
-    color: blue;
+.social-media1{
+    text-align: center;
+    color: #76F05B;
 }
 .logoo img {
     border-radius: 12px;
 }
 .row {
     width: 80%;
-    margin: 30px auto;
+    margin: 0px auto;
 }
 .row .card {
+    background-color: transparent;
 width: 300px;
 height: 200px;
 }
@@ -175,6 +179,9 @@ height: 200px;
 }
 .RrethNContainer{
     min-height: 100vh;
+    padding: 110px 0;
+    background-color: #1d1d1d;
+    border-bottom: solid #79F956 5px;
 }
 .rrethnesh{
        display: flex;
@@ -240,14 +247,22 @@ height: 200px;
 .teksti h3 {
     margin-top: 20px;
 }
+[type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled), button:not(:disabled){
+    background-color:#79F956 !important;
+}
+.portfolioo [type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled), button:not(:disabled){
+    background-color: transparent !important;
+    
+}
 .sherbimettona {
     width: 100%;
     min-height: 100vh;
-    background-image: url(./images/homelogo3.jpg);
+    background-color: #1d1d1d;
     background-size: cover;
     margin: 0px;
     padding: 0px;
     text-align: center;
+    border-bottom: solid #79F956 5px;
     color: whitesmoke;
     overflow: hidden;
        
@@ -256,7 +271,7 @@ height: 200px;
     width: 100%;
     min-height: 100vh;
     padding: 10px;
-    background: rgba(0,0,0,0.5);
+   
 }
 .sherbimettona h1{
     padding-top: 30px;
@@ -268,11 +283,15 @@ height: 200px;
     justify-content: center;
 	align-items: center;
 	align-content: stretch;
-    gap: 13px;
+    gap: 15px;
+    margin-bottom: 15px;
 }
 .cardss .card-img-top {
     width: 400px;
     height: 230px;
+    border: none;
+    padding: 0;
+    
 }
 .cardss .card-body {
     padding: 10px 10px;
@@ -315,16 +334,17 @@ height: 200px;
 }    
 
 .card {
-    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.14);
+    box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.14);
 }
 .portfolioo {
     min-height: 100vh;
     overflow: hidden;
     text-align: center;
     
-    background-image: url(./images/WhatsApp\ Image\ 2024-07-25\ at\ 20.59.01-Photoroom.png);
+   background-color: #1d1d1d;
     background-size: cover;
-    color:black;
+    color:whitesmoke;
+    border-bottom: solid #79F956 5px;
     
 }
 .portlogo{
@@ -334,6 +354,8 @@ height: 200px;
 }
 .portlogo img{
     width: 300px;
+    background-color: #79F956;
+    border-radius: 13px 13px 0 0 ;
 
 }
 .portfolioo  h1{
@@ -372,6 +394,7 @@ height: 200px;
     background-image: url(./images/blackbc.jpg);
     background-size: cover;
     color: white;
+    border-bottom: solid #79F956 5px;
   
     
 }
@@ -390,7 +413,8 @@ height: 200px;
     color: aquamarine;
 }
 .Kontaktimi{
-    background-image: url(./images/kontaktbcg.jpeg);
+    background-color: #1d1d1d;
+    color: whitesmoke;
 }
 .contact {
     overflow: hidden;
@@ -405,7 +429,8 @@ height: 200px;
     
     margin-left: 20px;
     width: 250px;
-    background-color: whitesmoke;
+    background-color: #1d1d1d;
+    color: whitesmoke;
     border-radius: 10px;
     margin-bottom: 20px;
 }
@@ -464,7 +489,7 @@ button:hover{
     margin: 30px auto;
   }
 .kartat{
-    margin-top: 95px;
+   
 }
 .hiddenn1{
     opacity: 0;
@@ -545,19 +570,21 @@ button {
 
 .card {
     overflow: hidden;
+    background-color: transparent;
+    
 }
  .card img {
     transition: 2s ease;
 }
  .card:hover img {
-    transform: scale(1.2);
+    transform: scale(1.15);
 }
 .social-media i {
     color: #76F05B;
 }
 
 .social-media1 i {
-    color: #ddeedd;
+    color:#76F05B;
 }
 .social-media1 i:hover {
     color: #76F05B;
@@ -714,15 +741,18 @@ button {
     background: transparent ;
     cursor: pointer;
     z-index: 8;
+   
   }
   
   .pre-btn {
     left: 0;
     transform: rotate(180deg);
+  
   }
   
   .nxt-btn {
     right: 0;
+   
   }
   
   .pre-btn img,
@@ -909,7 +939,7 @@ button {
   @media (max-aspect-ratio: 16/9) {
     .video-back{
         width: auto;
-        height: 100%;
+        min-height: 100%;
     }
   }
 
@@ -1003,9 +1033,10 @@ button {
     .sherbimettona {
     min-height: 100vh;
     width: 100%;
+   
     }
     .cardss .card {
-        margin: 0 auto;
+        margin: 30px auto;
     }
     .product-card {
         width: 325px;

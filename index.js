@@ -38,7 +38,7 @@ window.addEventListener("scroll", function() {
     const preBtn = [...document.querySelectorAll('.pre-btn')];
 
     let autoScrollIntervals = [];
-    const scrollInterval = 6000 ;
+    const scrollInterval = 6000;
 
     function startAutoScroll(container, cardWidth, index) {
         console.log(`Starting auto-scroll for container ${index}`);
