@@ -103,15 +103,20 @@ section{
     align-items: center;
     justify-content: center;
 }
-.video-back{
+.video-back {
     position: absolute;
     z-index: -1;
-    right: 0;
-    bottom: 0;  
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     width: 100%;
     height: auto;
-    filter: contrast(1);  
+    filter: contrast(1);
+    max-width: 100vw; 
+    max-height: 100vh; 
+    object-fit: cover; 
 }
+
 .details span {
     color:#00b377;
 }
@@ -153,6 +158,8 @@ section{
 }
 .logoo img {
     border-radius: 12px;
+    background-color: rgba(255, 255, 255, 0.5);
+    pointer-events: none; 
 }
 .row {
     width: 80%;
@@ -940,6 +947,7 @@ button {
     .video-back{
         width: auto;
         min-height: 100%;
+       
     }
   }
 
