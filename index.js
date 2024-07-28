@@ -38,7 +38,7 @@ window.addEventListener("scroll", function() {
     const preBtn = [...document.querySelectorAll('.pre-btn')];
 
     let autoScrollIntervals = [];
-    const scrollInterval = 6000;
+    const scrollInterval = 7000;
 
     function startAutoScroll(container, cardWidth, index) {
         console.log(`Starting auto-scroll for container ${index}`);
@@ -120,4 +120,15 @@ if (alertTrigger) {
   alertTrigger.addEventListener('click', () => {
     appendAlert('Mesazhi u dergua me sukses', 'success')
   })
+  document.addEventListener('click', function(event) {
+    var isClickInsideNavbar = document.getElementById('navbarNavAltMarkup').contains(event.target);
+    var isClickInsideToggler = document.querySelector('.navbar-toggler').contains(event.target);
+    
+    if (!isClickInsideNavbar && !isClickInsideToggler) {
+        var navbarCollapse = new bootstrap.Collapse(document.getElementById('navbarNavAltMarkup'), {
+            toggle: false
+        });
+        navbarCollapse.hide();
+    }
+});
 }

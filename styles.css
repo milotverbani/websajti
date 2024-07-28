@@ -254,10 +254,8 @@ height: 200px;
 .teksti h3 {
     margin-top: 20px;
 }
-[type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled), button:not(:disabled){
-    background-color:#79F956 !important;
-}
-.portfolioo [type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled), button:not(:disabled){
+
+.nxt-btn {
     background-color: transparent !important;
     
 }
@@ -313,6 +311,10 @@ height: 200px;
     color: white;
     background-color:#228B22
 }
+.navbar-toggler{
+    background-color: #76F05B;
+    border: none;
+}
 
 .container2 {
     text-align: center;
@@ -339,6 +341,9 @@ height: 200px;
 .koninier{
     overflow: hidden;
 }    
+.koninier section {
+    width: 100%;
+}
 
 .card {
     box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.14);
@@ -443,6 +448,7 @@ height: 200px;
 }
 .tablec {
     font-size: 40px;
+    background-color: #0056b3;
     text-decoration: none;
 }
 .tablec td i {
@@ -450,6 +456,8 @@ height: 200px;
     padding-top: 20px;
     text-decoration: none;
 }
+
+
 
 .mesazhi {
     background-color:whitesmoke;
@@ -695,11 +703,13 @@ button {
     transition: 0.5s;
     cursor: pointer;
     opacity: 0;
+    color: black;
+    font-weight:500;
   }
   
   .product-card:hover .card-btn {
     opacity: 1;
-    background-color:rgba(9, 77, 3, 0.7);
+    background-color:#79F956;
   }
   
   
@@ -821,12 +831,12 @@ button {
 }
 
 .modal-content {
-    background-color: #fefefe;
     margin: 5% auto;
     padding:0 20px;
-    border: 1px solid #888;
-    width: 60%;
-    background-image: url(./images/contactbc.png);
+    border: 1px solid #76F05B;
+    width: 70%;
+    background-color: #1d1d1d;
+    color: whitesmoke;
     animation: fadeIn 0.5s;
     text-align: center;
     height: 80%;
@@ -1012,6 +1022,12 @@ button {
     .social-media{
         display: none;
     }
+    .navbar-nav{
+        display: flex;
+        align-items: center;
+        
+    }
+
     .navbar-nav a{  
         text-align: center;
     }
@@ -1192,5 +1208,20 @@ button {
   
   #contact-form input[type="submit"]:hover {
     background-color: #0056b3;
+  }
+  @media only screen and (max-width:1290px) {
+    html{
+        overflow-x: hidden;
+    }
+    
+  }
+  @media only screen and (max-width:900px) {
+    html{
+        overflow-x: hidden;
+    }
+    .social-media{
+        display: none;
+    }
+    
   }
   
