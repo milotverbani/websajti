@@ -357,7 +357,7 @@ height: 200px;
     background-size: cover;
     color:whitesmoke;
     border-bottom: solid #79F956 5px;
-    
+    padding: 95px 0 0 0;
 }
 .portlogo{
     display: flex;
@@ -370,9 +370,8 @@ height: 200px;
     border-radius: 13px 13px 0 0 ;
 
 }
-.portfolioo  h1{
-    margin: 95px auto;
-    
+.portfolioo  svg{
+    width: 50%;
 }
 .portfolioo .card-img-top {
     width: 600px;

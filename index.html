@@ -176,6 +176,9 @@
       <section class="hiddenn0">
       <div class="porttitle">
         <h1>Punimet tona ndër vite...</h1>
+        <svg viewBox="0 -0.5 100 1" width="100%" height="2px" xmlns="http://www.w3.org/2000/svg">
+          <line x1="0" y1="0" x2="100" y2="0" stroke="whitesmoke" stroke-width="0.5" />
+        </svg> 
       </div>
     </section>
     <section class="hiddenn0">
@@ -189,6 +192,9 @@
     </section>
     <div class="griddetajet">
         <h1 style="font-family: 'Sevillana', cursive;;">Punimet me detaje:</h1>
+        <svg viewBox="0 -0.5 100 1" width="100%" height="2px" xmlns="http://www.w3.org/2000/svg">
+          <line x1="0" y1="0" x2="100" y2="0" stroke="whitesmoke" stroke-width="0.5" />
+        </svg> 
         <div class="produktgrid"> 
           <div class="grid-container">
             <div class="grid-item item1"></div>
@@ -277,6 +283,10 @@
          </tr>
     </tbody>
   </table>
+  <script
+  type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
   <script type="text/javascript">
     (function() {
         // https://dashboard.emailjs.com/admin/account
@@ -300,10 +310,7 @@
     }
 </script>
 
-<script
-  type="text/javascript"
-  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
-</script>
+
 <script>
   emailjs.init({
   publicKey: 'DBS4tuiKKboWu9rBE',
@@ -320,11 +327,11 @@ emailjs.sendForm('contact_service', 'contact_form', this);
  
   <form id="contact-form">
      <h1>Contact Us</h1>
-    <input type="hidden" name="contact_number" value="697483" >
+    <input type="hidden" name="contact_number" value="697483" required>
     <label>Emri</label>
-    <input type="text" name="user_name" placeholder="Emri juaj">
-    <label>Email</label>
-    <input type="email" name="user_email" placeholder="Emaili juaj">
+    <input type="text" name="user_name" placeholder="Emri" required>
+    <label>E-mail</label>
+    <input type="email" name="user_email" placeholder="E-mail" required>
     <label>Mesazhi</label>
     <textarea name="message" placeholder="Mesazhi"></textarea>
     <div id="liveAlertPlaceholder"></div>

@@ -115,11 +115,17 @@ const appendAlert = (message, type) => {
   alertPlaceholder.append(wrapper)
 }
 
-const alertTrigger = document.getElementById('liveAlertBtn')
+const alertTrigger = document.getElementById('liveAlertBtn');
 if (alertTrigger) {
   alertTrigger.addEventListener('click', () => {
-    appendAlert('Mesazhi u dergua me sukses', 'success')
-  })
+    const emailField = document.getElementById('emailField');
+    if (emailField && emailField.value.trim() !== '') {
+      appendAlert('Mesazhi u dergua me sukses', 'success');
+    } else {
+      appendAlert('Ju lutemi plotësoni të gjitha fushat e kërkuara', 'warning');
+    }
+  });
+
   document.addEventListener('click', function(event) {
     var isClickInsideNavbar = document.getElementById('navbarNavAltMarkup').contains(event.target);
     var isClickInsideToggler = document.querySelector('.navbar-toggler').contains(event.target);
@@ -130,5 +136,5 @@ if (alertTrigger) {
         });
         navbarCollapse.hide();
     }
-});
+  });
 }
