@@ -1064,6 +1064,9 @@ button {
     .product-card {
         width: 325px;
     }
+    .portfolioo svg{
+        width: 100%;
+    }
     .modalimagecontainer{
         
         height: 390px;
@@ -1071,10 +1074,12 @@ button {
     .sherbimettona p {
         padding: 5px 5px;
     }
-   
-    .contact {
-        height: 940px;
-    }
+   .modalinfo{
+    height: fit-content;
+   }
+   .modaldiscription{
+    display: none;
+   }
     .mesazhi {
         width: 250px;
     }
@@ -1119,7 +1124,7 @@ button {
 }
 .modal-content{
     width: 100%;
-    height: 600px;
+    height: fit-content;
 }
 .modaldiscription{
     width: 100%;
@@ -1214,12 +1219,30 @@ button {
     }
     
   }
-  @media only screen and (max-width:900px) {
+  @media only screen and (max-width:800px) {
     html{
         overflow-x: hidden;
     }
     .social-media{
         display: none;
+    }
+    .rrethnesh{
+        display: block;
+    }
+    .rrethnesh .teksti{
+        width: 100%;
+    }
+    .rrethneshvideo{
+        margin: 0 auto;
+    }
+    .rrethneshvideo .videofb video{
+        width: 100%;
+    }
+    .teksti2{
+        width: 100%;
+    }
+    .portfolioo svg{
+        width: 100%;
     }
     
   }
